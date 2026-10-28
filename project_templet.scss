@@ -1,0 +1,121 @@
+// ============================================================
+// Quarto theme layer for Math 268 final project documents
+// (guidelines, project template, student submissions).
+// Same look as hw_templet.scss, with larger body text.
+// Used with the "spacelab" Bootswatch theme:
+//   format:
+//     html:
+//       theme: [spacelab, project_templet.scss]
+// ============================================================
+
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+// -------------------- Fonts --------------------
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, p, li, td, th {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #222;
+}
+
+// -------------------- Inline code and chunks --------------------
+code {
+  color: #8b1a0f;
+}
+
+pre { // code chunks; font size also controls line spacing
+  font-size: 14px;
+}
+
+// -------------------- Headings --------------------
+h1.title { /* document title */
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #057a24;
+  font-family: "Copperplate Gothic Bold", Copperplate, sans-serif;
+  border-bottom: 0px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #300a82;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #300a82;
+}
+
+h2 { /* main sections */
+  font-size: 22px;
+  font-weight: bold;
+  color: #4902e3;
+  border-bottom: 1px solid;
+  margin-top: 1.6em;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #175B57;
+}
+
+h4 { /* answer headers in student reports */
+  font-weight: bold;
+  color: #0148A4;
+}
+
+strong {
+  color: #111;
+}
+
+// Section numbers in headings and the table of contents: no light gray
+.header-section-number {
+  color: inherit;
+}
+
+#TOC .header-section-number, .toc-section-number {
+  color: #333;
+}
+
+// -------------------- Tables --------------------
+table {
+  width: 100%;
+  margin-bottom: 1.2em;
+}
+
+th {
+  background-color: #e8e4f7;
+  color: #300a82;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f3fb;
+}
+
+td, th {
+  padding: 6px 10px !important;
+  vertical-align: top;
+}
+
+// -------------------- Callouts --------------------
+.callout {
+  font-size: 16px;
+}
+
+.callout .callout-title-container {
+  font-weight: bold;
+  color: #222;
+}
+
+// Optional summary line: [text]{.task-intro} in the qmd
+.task-intro {
+  font-style: italic;
+  color: #333;
+}

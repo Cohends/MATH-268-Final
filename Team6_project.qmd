@@ -1,0 +1,151 @@
+---
+title: "[Your title: your main question or, later, your main finding]"
+subtitle: "Math 268 Final Project · Team 6"
+author: "Dylan Cohen, Parash Khanal, Livia Leneweaver, Max Tyree"
+date: today
+format:
+  html:
+    theme: [spacelab, "project_templet.scss"]
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    embed-resources: true
+    code-fold: true
+    code-summary: "Show code"
+    df-print: tibble
+    language:
+      title-block-published: "Date Submitted"
+execute:
+  warning: false
+  message: false
+---
+
+<!--
+ONE STARTING POINT FOR THE WHOLE PROJECT
+Start your proposal from this file, then build on it for the draft report and the final report.
+At each milestone, add, revise, or remove sections as that milestone's instructions require.
+A typical path:
+
+  Section                    Proposal        Draft report             Final report
+  1 Introduction             why + what new  update                   add your main finding
+  2 Main Question            write           update if needed         final version
+  3 Follow-up Questions      planned         update evidence          evidence you used
+  4 The Data                 write           update                   final version
+  5 Data Quality             data check      update                   prose: quality + cleaning
+  6 Answers                  leave           about 75% of questions   all questions
+  7 Conclusion               leave           plan for the rest        full conclusion
+  Contributions, AI use      write           rewrite                  rewrite
+
+Text in [square brackets] is a placeholder: replace it.
+Keep this file and project_templet.scss together in math268/project, with your data in math268/project/data.
+-->
+
+```{r packages}
+# Load every package you use here
+library(tidyverse)
+library(here)
+```
+
+```{r data}
+# Read the raw data. Keep the raw file unchanged; do all cleaning in code.
+# raw <- read_csv(here("project", "data", "your_file.csv"))
+```
+
+## Introduction
+
+<!-- Proposal: why the topic matters, with one concrete number (cite it), and what is new:
+     one or two existing analyses (with links) and what your project does differently.
+     Final report: start with your main finding in plain language, before any chart. -->
+
+[Why this matters, with a concrete number.]
+
+[What is new: existing analyses and how your project differs.]
+
+## Main Question
+
+<!-- One question about the real world: clear, concise, focused, not yes/no, arguable. -->
+
+**Main question:** [Your main question]
+
+## Follow-up Questions
+
+<!-- Four to six questions, in order. Job: establishes, stress-tests, questions, or extends.
+     Evidence: the chart, statistic, or prose that fits the question, the variables it uses,
+     and its course topic, e.g., "scatterplot of median income vs. premature deaths (relationships)". Plan for at least two of relationships, time, clusters.
+     Proposal: planned evidence. Later: update it to the evidence you actually used. -->
+
+| # | Follow-up question | Job | Evidence (course topic) |
+|:--|:--|:--|:--|
+| 1 | [Question] | [Job] | [Chart or statistic, variables (topic)] |
+| 2 | [Question] | [Job] | [Chart or statistic, variables (topic)] |
+| 3 | [Question] | [Job] | [Chart or statistic, variables (topic)] |
+| 4 | [Question] | [Job] | [Chart or statistic, variables (topic)] |
+
+## The Data
+
+- **Source:** [Name, link, date accessed]
+- **Collected by, when, and how:** [Who, the time period, the method]
+- **One row is:** [e.g., one county in one year]
+- **Size:** [rows] rows and [variables] variables
+- **Supports questions:** [If you use more than one dataset, which questions each one supports]
+
+| Variable | Type | Meaning |
+|:--|:--|:--|
+| [name] | [numerical / categorical / date] | [what it measures, units] |
+
+## Data Quality
+
+<!-- Proposal: check missing values (how many, and who is missing), codes that mean "unknown",
+     and outliers. One or two charts (e.g., a boxplot). Say what you found, with numbers.
+     Also the credibility and limits of the source: who might be missing, possible bias,
+     and what it cannot show (such as cause).
+     Final report: a prose section on data quality and the cleaning decisions you made. -->
+
+```{r data-check}
+# Your data-check and cleaning code
+```
+
+[What you found, with numbers from your output, and what you will do about it.]
+
+[Credibility and limits of the source.]
+
+## Answers
+
+<!-- Draft report and final report. Copy this block for each follow-up question.
+     Header: the finding, as a sentence. One or two charts, each with a title with a point.
+     Paragraph: claim, specifics (numbers from your output), why. -->
+
+### [Header: the finding for Question 1, as a sentence]
+
+**Question 1:** [Copy the follow-up question]
+
+```{r q1}
+# Code for the one or two charts and the numbers
+```
+
+[Paragraph: claim, specifics, why.]
+
+## Conclusion
+
+<!-- Draft report: replace this section with a short plan for the questions not answered yet.
+     Final report: the conclusion below. -->
+
+### [Header: your answer to the main question, as a sentence]
+
+[Paragraph: claim, specifics, why.]
+
+**Complication:** [One honest exception or limitation]
+
+**What would strengthen this:** [A missing data source, a better measure, or a next step]
+
+## Member Contributions {.unnumbered}
+
+<!-- Rewrite at every milestone: who did what for this milestone (not "we all worked together"). -->
+
+- **[Name]:** [Contribution]
+
+## AI Use Statement {.unnumbered}
+
+<!-- Rewrite at every milestone: describe any AI use (e.g., debugging help), or write "None." -->
+
+[Your statement]
